@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEVE Companion Tour</title>
+<style>
+:root { --purple:#4F2683; --ink:#1b1b1f; --paper:#ffffff; --muted:#55505f; --line:#d9d4e3; }
+@media (prefers-color-scheme: dark) { :root { --ink:#f3f1f7; --paper:#17151c; --muted:#c4bdd3; --line:#3a3446; --purple:#b99be6; } }
+* { box-sizing:border-box; }
+body { margin:0; font:1.05rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--paper); }
+a { color:var(--purple); }
+a:focus, .skip:focus { outline:3px solid #f0b400; outline-offset:2px; }
+.skip { position:absolute; left:-999px; top:0; background:#fff; color:#000; padding:.5rem 1rem; }
+.skip:focus { left:1rem; }
+header { background:#4F2683; color:#fff; padding:1.5rem 1rem; }
+header p { margin:.25rem 0 0; }
+main { max-width:48rem; margin:0 auto; padding:1rem; }
+nav ul { padding-left:1.2rem; }
+section { border-top:2px solid var(--line); margin-top:2rem; }
+.poi { margin:1.5rem 0; }
+.poi img { max-width:100%; height:auto; border:1px solid var(--line); }
+.note { color:var(--muted); font-size:.95rem; }
+footer { max-width:48rem; margin:2rem auto; padding:0 1rem 2rem; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to the tour</a>
+<header><h1>Western Engineering Virtual Explorer: text tour</h1>
+<p>An accessible companion to the WEVE 3D prototype. Every space and point of interest from the 3D tour is described here.</p></header>
+<main id="content">
+<p class="note">Prototype by SE 3351 Team 50. Draft content, not Western-approved. Photos are placeholders until they pass the privacy review.</p>
+<nav aria-label="Buildings"><h2>Contents</h2><ul><li><a href="#hub">Getting started</a></li><li><a href="#teb">Thompson Engineering Building (TEB)</a></li><li><a href="#seb">Spencer Engineering Building (SEB)</a></li><li><a href="#aceb">Amit Chakma Engineering Building (ACEB)</a></li></ul></nav>
+<section aria-labelledby="h-hub"><h2 id="h-hub">Getting started</h2>
+<article class="poi" id="hub_welcome">
+  <h3>Welcome to the Western Engineering Virtual Explorer</h3>
+  <img src="images/weve_photo_hub_welcome.png" alt="Photo of Welcome to the Western Engineering Virtual Explorer" width="320" height="200">
+  <p>Explore three Western Engineering buildings from anywhere. Walk with W A S D and look around with the mouse. Right-click a purple info point to learn about a space. Right-click a purple pad behind you to jump to a building, or type /building teb, /building seb or /building aceb. Use the guide item (or type /go) to travel straight to any point of interest or to follow the guided tour. Areas behind grey doors are not part of the tour.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/future-students/programs/index.html">Western Engineering programs</a></li></ul>
+</article></section><section aria-labelledby="h-teb"><h2 id="h-teb">Thompson Engineering Building (TEB)</h2>
+<article class="poi" id="teb_lobby">
+  <h3>Thompson Engineering Building (TEB)</h3>
+  <img src="images/weve_photo_teb_lobby.png" alt="Photo of Thompson Engineering Building (TEB)" width="320" height="200">
+  <p>TEB was completed in 2003. It is home to the departments of Electrical and Computer Engineering and of Chemical and Biochemical Engineering. This virtual tour covers the main entrance, the lobby and the ground-floor corridor.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/electrical/">Electrical and Computer Engineering</a></li><li><a href="https://www.eng.uwo.ca/chemical/">Chemical and Biochemical Engineering</a></li></ul>
+</article>
+<article class="poi" id="teb_corridor">
+  <h3>TEB main corridor</h3>
+  <img src="images/weve_photo_teb_corridor.png" alt="Photo of TEB main corridor" width="320" height="200">
+  <p>The ground-floor corridor links the lobby with teaching spaces. Rooms behind the grey doors, upper floors, research labs and offices are not part of the virtual tour.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/chemical/">Chemical and Biochemical Engineering</a></li></ul>
+</article>
+<article class="poi" id="teb_lab">
+  <h3>Undergraduate teaching lab (ECE)</h3>
+  <img src="images/weve_photo_teb_lab.png" alt="Photo of Undergraduate teaching lab (ECE)" width="320" height="200">
+  <p>In undergraduate teaching labs like this one, students put lecture theory into practice: they build and test circuits, use measurement equipment and write up what they find. You are viewing the lab from the doorway. The equipment shown is generic.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/electrical/">Electrical and Computer Engineering</a></li></ul>
+</article></section><section aria-labelledby="h-seb"><h2 id="h-seb">Spencer Engineering Building (SEB)</h2>
+<article class="poi" id="seb_hall">
+  <h3>Spencer Engineering Building (SEB)</h3>
+  <img src="images/weve_photo_seb_hall.png" alt="Photo of Spencer Engineering Building (SEB)" width="320" height="200">
+  <p>SEB was built in 1958 and 1959 and inaugurated on October 30, 1959. Designed by Ronald Murphy in the Gothic Collegiate style, it has three storeys and is named after Major General Alexander Charles Spencer. It houses the Dean&#x27;s office, Mechanical and Materials Engineering, and Civil and Environmental Engineering.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/mechanical/">Mechanical and Materials Engineering</a></li><li><a href="https://www.eng.uwo.ca/civil/">Civil and Environmental Engineering</a></li></ul>
+</article>
+<article class="poi" id="seb_classroom">
+  <h3>Lecture hall 1200</h3>
+  <img src="images/weve_photo_seb_classroom.png" alt="Photo of Lecture hall 1200" width="320" height="200">
+  <p>Lecture hall 1200 is a tiered classroom in the SEB lecture-hall extension. Classrooms like this one host lectures and tutorials. First-year students at Western Engineering share a common first year before choosing their discipline.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/future-students/your-eng-experience/first-year/common-first-year.html">Common first year</a></li></ul>
+</article>
+<article class="poi" id="seb_dean">
+  <h3>Dean&#x27;s office</h3>
+  <img src="images/weve_photo_seb_dean.png" alt="Photo of Dean&#x27;s office" width="320" height="200">
+  <p>The office of the Dean of Engineering is in SEB. The office itself is not part of the virtual tour.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/future-students/">Future students</a></li></ul>
+</article></section><section aria-labelledby="h-aceb"><h2 id="h-aceb">Amit Chakma Engineering Building (ACEB)</h2>
+<article class="poi" id="aceb_atrium">
+  <h3>Amit Chakma Engineering Building (ACEB)</h3>
+  <img src="images/weve_photo_aceb_atrium.png" alt="Photo of Amit Chakma Engineering Building (ACEB)" width="320" height="200">
+  <p>ACEB opened on October 12, 2018. Its 100,000 square feet hold teaching labs, tiered classrooms, collaborative research space, the Engineering Galleries, flexible meeting spaces and this welcoming atrium, a gathering place for students.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/departments-units/amit-chakma-engineering-building">About the Amit Chakma Engineering Building</a></li></ul>
+</article>
+<article class="poi" id="aceb_proto">
+  <h3>Prototyping space</h3>
+  <img src="images/weve_photo_aceb_proto.png" alt="Photo of Prototyping space" width="320" height="200">
+  <p>ACEB&#x27;s 2,500 square foot prototyping space is where undergraduate students combine classroom theory with hands-on learning: designing, building, testing and refining their ideas. Machines shown are generic.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/future-students/programs/index.html">Western Engineering programs</a></li></ul>
+</article>
+<article class="poi" id="aceb_sustain">
+  <h3>Sustainable design</h3>
+  <img src="images/weve_photo_aceb_sustain.png" alt="Photo of Sustainable design" width="320" height="200">
+  <p>ACEB was designed with sustainability in mind. It features rainwater harvesting, electric-vehicle charging and solar energy, and won a provincial award of excellence for new green buildings in 2018.</p>
+  <h4>Learn more</h4><ul><li><a href="https://www.eng.uwo.ca/departments-units/amit-chakma-engineering-building">About the Amit Chakma Engineering Building</a></li></ul>
+</article></section>
+</main>
+<footer>Generated from weve_content.json, the same file the 3D prototype uses, so both stay in step. Building facts come from public Western University and Western Engineering sources.</footer>
+</body>
+</html>
