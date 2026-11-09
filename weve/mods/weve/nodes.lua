@@ -75,12 +75,30 @@ for _, code in ipairs({"teb", "seb", "aceb"}) do
 end
 
 -- Guide item: opens the quick-travel menu (FR-06)
+-- The guide is always in hand, so a click on a block with its own action (info point, door, pad,
+-- stairs) is passed to that block; any other click opens the guide.
+local function guide_click(itemstack, user, pointed, callback)
+	if not user then return itemstack end
+	if pointed and pointed.type == "node" then
+		local node = minetest.get_node(pointed.under)
+		local def = minetest.registered_nodes[node.name]
+		if def and callback == "on_rightclick" and def.on_rightclick then
+			def.on_rightclick(pointed.under, node, user, itemstack, pointed)
+			return itemstack
+		elseif def and callback == "on_punch" and def.on_punch and def.on_punch ~= minetest.node_punch then
+			def.on_punch(pointed.under, node, user, pointed)
+			return itemstack
+		end
+	end
+	weve.show_guide(user)
+	return itemstack
+end
 minetest.register_craftitem("weve:guide", {
 	description = "WEVE guide (click to open quick travel)",
 	inventory_image = "weve_guide.png",
 	stack_max = 1,
-	on_use = function(itemstack, user) if user then weve.show_guide(user) end return itemstack end,
+	on_use = function(itemstack, user, pointed) return guide_click(itemstack, user, pointed, "on_punch") end,
 	on_secondary_use = function(itemstack, user) if user then weve.show_guide(user) end return itemstack end,
-	on_place = function(itemstack, user) if user then weve.show_guide(user) end return itemstack end,
+	on_place = function(itemstack, user, pointed) return guide_click(itemstack, user, pointed, "on_rightclick") end,
 	on_drop = function(itemstack) return itemstack end,
 })
