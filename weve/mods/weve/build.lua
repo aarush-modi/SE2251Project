@@ -2,7 +2,7 @@
 --
 -- Sources
 --   * SEB, CMLP and ACEB: Western Facilities Management floor plans SEB-01 to SEB-05 (2024),
---     drawn at 1/16" = 1'-0" (internal; not included in this package). site_data.lua keeps only the
+--     drawn at 1/16" = 1'-0" (available only to Western students and staff; not included in this package). site_data.lua keeps only the
 --     outline of every level (per 1 m cell). The tour spaces below follow the same plans; room
 --     numbers are given in the comments.
 --   * TEB is not in the plan set. Its north end and the bridge (TA.235) are on SEB-03, which fixes
@@ -698,7 +698,7 @@ local function build_seb()
 	door(-31, 114, true, true) door(-31, 115, true, true)                            -- TA.102, 1959 block
 	for _, x in ipairs({-28, -24, -20, -15, -6, 1, 6, 12, 18}) do door(x, 113, true) end   -- rooms 1060-1085 and beyond
 	for _, x in ipairs({-27, -22, -16, -12, -7, 7, 11, 16}) do door(x, 116, true) end      -- rooms 1076, 1077, 1079, 1081
-	door(3, 116, true) set(3, 2, 116, N .. "purple")                                -- Dean's office (closed; room to confirm)
+	door(3, 116, true) set(3, 2, 116, N .. "purple")                                -- marker for the Dean's office (actual office: room 2008, second floor; confirmed on site Nov 8)
 	-- past ST.1 (x 23..26) into TA.121, the lobby of the lecture-hall extension (z 109.6..114.8)
 	room(22, 27, 113, 115, N .. "terrazzo")
 	room(28, 49, 110, 114, N .. "terrazzo")

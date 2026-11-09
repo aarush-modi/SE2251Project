@@ -50,7 +50,7 @@ Visitors get only the `interact` and `shout` privileges, so they cannot fly, pas
 
 ### Where the layout comes from
 
-The SEB complex, the Claudette MacKay-Lassonde Pavilion (CMLP) and ACEB follow the Western Facilities Management floor plans SEB-01 to SEB-05 (2024), drawn at 1/16" = 1'-0". **The plans are internal to Western and are not included in this package or repository.** The team keeps them, and the scripts that traced them, privately (risk R-17).
+The SEB complex, the Claudette MacKay-Lassonde Pavilion (CMLP) and ACEB follow the Western Facilities Management floor plans SEB-01 to SEB-05 (2024), drawn at 1/16" = 1'-0". **The plans are available only to Western students and staff (Western login required) and are not included in this package or repository.** The team keeps them, and the scripts that traced them, privately (risk R-17).
 
 - Plan Level 02 (rooms 1xxx) is the floor you walk in on, so it is the ground floor in the game. Levels 03 to 05 are floors 2 to 4. Level 01 is a lower level and is not modelled.
 - `weve/mods/weve/site_data.lua` holds **outlines only**: for each level, which 1 m cells are outside, inside the building, or exterior wall. The game builds the facade, floors and roof of every level from it. Interior rooms, walls, exits, stairs and the basement were removed before release.

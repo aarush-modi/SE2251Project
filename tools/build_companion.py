@@ -17,7 +17,13 @@ for code, heading in order:
         img = p.get("image")
         fig = ""
         if img and os.path.exists(os.path.join(photos, img)):
-            shutil.copy(os.path.join(photos, img), os.path.join(out, "images", img))
+            try:  # web copy as JPEG keeps the page under the 3 MB budget (NFR-08)
+                from PIL import Image
+                web = os.path.splitext(img)[0] + ".jpg"
+                Image.open(os.path.join(photos, img)).convert("RGB").save(os.path.join(out, "images", web), quality=82, optimize=True)
+                img = web
+            except ImportError:
+                shutil.copy(os.path.join(photos, img), os.path.join(out, "images", img))
             fig = f'<img src="images/{e(img)}" alt="{e(p.get("alt", "Photo of " + p["title"]))}" width="320" height="200">'
         links = "".join(f'<li><a href="{e(l["url"])}">{e(l["label"])}</a></li>' for l in p.get("links", []))
         items.append(f'''<article class="poi" id="{e(p["id"])}">

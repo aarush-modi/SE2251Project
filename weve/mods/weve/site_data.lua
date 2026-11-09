@@ -1,6 +1,6 @@
 -- Building outlines for WEVE (public release). 1 cell = 1 m, world coordinates.
--- Derived from the Western Facilities Management floor plans, which are internal and are NOT
--- included in this package. Only each level's outline is kept here: interior rooms, walls, exits,
+-- Derived from the Western Facilities Management floor plans, which are available only to Western
+-- students and staff and are NOT included in this package. Only each level's outline is kept here: interior rooms, walls, exits,
 -- stairs and the basement were removed before release (Team 50 risk R-17).
 -- 0 outside, 1 inside the building (closed), 3 exterior wall. id: A = ACEB, S = SEB, C = CMLP, T = SEB tower.
 weve.SITE = {x0 = -60, z0 = -80, nx = 121, nz = 221, levels = {
