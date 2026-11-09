@@ -29,6 +29,8 @@ No server is running yet; someone on the team has to host one. There are two way
 
 Visitors get only the `interact` and `shout` privileges, so they cannot fly, pass through walls, dig or build. Give team members the editing privilege with `/grant <name> weve_builder` (plus `fly` and `noclip` if they need them); the host has every privilege automatically.
 
+**Privacy of the server log (NFR-04, D-21).** WEVE's own analytics never record names or IP addresses, but Luanti's server log (`debug.txt` in the Luanti user folder) records each player's name and IP address when they join. Before a session with visitors, add the line `debug_log_level = warning` to the host's `minetest.conf`, which stops join messages from being written to the log. After a demo, delete `debug.txt`. Never commit or share it.
+
 ## How to explore
 
 - Move with W A S D, look with the mouse, jump with Space.

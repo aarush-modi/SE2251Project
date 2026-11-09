@@ -111,7 +111,7 @@ local POI_LOCAL = { -- building, node (lx, lz), stand (lx, lz), local yaw
 	teb_lab = {teb, teb.show.door_x - 1, teb.show.z0, teb.show.door_x, teb.corridor.z0 + 1, 0},
 	aceb_atrium = {aceb, 84, 4, 84, 2, 0},
 	aceb_proto = {aceb, AC.proto.door + 3, AC.gal.z0, AC.proto.door + 3, AC.gal.z0 + 2, math.pi},
-	aceb_sustain = {aceb, 85, -3, 85, -6, 0},
+	aceb_sustain = {aceb, 85, -3, 86, -5, 0},  -- D-14: arrival moved off the hub corner pillar
 }
 local POI_POS = {hub_welcome = {node = {x = 2, y = 0, z = -4}, stand = {x = 2, y = 0.5, z = -7}, yaw = 0}}
 for id, d in pairs(POI_LOCAL) do
