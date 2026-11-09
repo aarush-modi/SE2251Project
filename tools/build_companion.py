@@ -11,7 +11,7 @@ nav = []
 for code, heading in order:
     pois = [p for p in d["pois"] if p["building"] == code]
     if not pois: continue
-    nav.append(f'<li><a href="#{code}">{e(heading)}</a></li>')
+    nav.append(f'<li><a href="#h-{code}">{e(heading)}</a></li>')
     items = []
     for p in pois:
         img = p.get("image")
@@ -64,7 +64,7 @@ footer {{ max-width:48rem; margin:2rem auto; padding:0 1rem 2rem; color:var(--mu
 <header><h1>Western Engineering Virtual Explorer: text tour</h1>
 <p>An accessible companion to the WEVE 3D prototype. Every space and point of interest from the 3D tour is described here.</p></header>
 <main id="content">
-<p class="note">Prototype by SE 3351 Team 50. Draft content, not Western-approved. Photos are placeholders until they pass the privacy review.</p>
+<p class="note">Prototype by SE 3351 Team 50. Draft content, not Western-approved. Photos were taken on campus by the team and checked for privacy on Nov 8; the teaching-lab photo is still a placeholder.</p>
 <nav aria-label="Buildings"><h2>Contents</h2><ul>{"".join(nav)}</ul></nav>
 {"".join(parts)}
 </main>

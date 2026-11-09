@@ -15,7 +15,7 @@ SE 3351 Group Project, Team 50. A block-based digital twin of three Western Engi
 
 1. Install Luanti (free) from https://www.luanti.org/downloads/. Tested with the Minetest 5.6.1 engine, the release before the rename to Luanti; any Luanti 5.x release should work.
 2. Start Luanti, open **About**, click **Open User Data Directory**, then open the `games` folder inside it. Copy the whole `weve` folder there.
-3. Restart Luanti. In **Start Game**, click the WEVE icon along the bottom of the window, click **New**, name the world `WEVE` and click **Create**. The only map generator offered is `singlenode`, which is correct.
+3. Restart Luanti. In **Start Game**, click **weve** in the row of games along the bottom of the window (it shows as the text "weve", not an icon), click **New**, name the world `WEVE` and click **Create**. The only map generator offered is `singlenode`, which is correct.
 4. Select the world and press **Play Game**. On the first start the campus takes 2 to 5 seconds to generate.
 
 No other games or mods are needed. No account is needed to explore.
